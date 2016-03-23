@@ -1,0 +1,641 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+/* defining the colors*/
+$logo_color: #E72E1C;
+$possible_color: #21B6A5;
+$slide_title: #FF1F00;
+$slide_text: #a1a1a1;
+$engineering_process_color: #1A9CD6;
+$materials_color: #A05CAC;
+$structures_color: #139F9D;
+$machines_color: #A3D147;
+$energy_color: #F59A00;
+$computing_color: #F74D9C;
+/* $video_area: #f6f6f6; */
+$video_area: #ffffff;
+$correct_color: #008000;
+
+.banner-top-2025{
+	color:#fff;
+	font-size: 16px;
+	line-height: 20px;
+	text-decoration:none;
+}
+.banner-bottom-2025{
+	color:#fff;
+	font-size: 14px;
+	line-height: 14px;
+	padding-right: 10px;
+	font-style: italic;
+}
+.logo_footer{
+	background-color: $logo_color;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-bottom:10px;
+}
+$homepage_background_color: $engineering_process_color;
+.menu_nav{
+	text-decoration:none;
+	float:left;
+	padding-top:7px;
+	padding-bottom:7px;
+	font-size: 12px;
+	font-weight:bold;
+	padding-bottom: 10px;
+/*	color: $homepage_background_color; */
+	color: fff;
+}
+$menu_text: 000000;
+
+/* padding used throughout to get spacing correct*/
+
+.navgraph{
+	padding-bottom:15px;
+}
+
+.navbuttons{
+	padding-right: 20px;
+	float:right;
+}
+.topnav{
+	float:left;
+	padding-top:7px;
+	padding-bottom:7px;
+}
+.navbar-2025{
+	@extend .navbar-default;	
+#	background-color: $logo_color;
+	border-color: $logo_color;
+}
+.navbar-header-2025{
+	@extend .navbar-header;	
+	background-color: $logo_color;
+}
+.footer{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.bottomsquares{
+	float:right;
+}
+
+.center_text{
+	text-align: center;
+}
+
+
+
+.article_image{
+	margin-top:  20px;
+}
+
+
+/* formatting for engineering in the news*/
+.eitn_title{
+	font-size: 16px;
+	padding-bottom: 10px;
+	font-weight:bold;
+}
+
+.eitn_header{
+	font-size: 14px;
+	font-weight:bold;
+}
+
+.eitn_emphasis{
+#	font-size: 14px;
+	font-weight:bold;
+	font-size: 16px;
+	color: $logo_color;
+}
+
+.eitn_author{
+	font-size: 12px;
+	font-weight:bold;
+	padding-bottom: 10px;
+	color:#a1a1a1
+}
+
+.eitn_caption{
+	font-size: 11px;
+	font-weight:bold;
+	line-height: 8px;
+
+}
+.copyright_statement{
+	font-size: 11px;
+	line-height: 8px;
+#	margin-left: 80px;
+#	padding-left: 10px;
+#	text-align: center;
+
+}
+
+/* formatting for projects*/
+.projects_title{
+	font-size: 16px;
+	padding-bottom: 10px;
+	font-weight:bold;
+}
+
+.projects_description{
+	font-size: 14px;
+#	font-weight:bold;
+	padding-bottom: 10px;
+#	color:#a1a1a1
+}
+
+.projects_caption{
+	font-size: 14px;
+	font-weight:bold;
+	padding-top: 10px;
+	padding-bottom: 6px;
+	line-height: 8px;
+#	margin-left: 40px;
+	color:#ffffff
+}
+
+.projects_materials_needed{
+	font-size: 14px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+#	margin-left: 40px;
+	color:#ffffff
+
+}
+
+.characters_title{
+	font-size: 32px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight:bold;
+	color: $logo_color;
+}
+
+
+.pricelist_title{
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight:bold;
+	color: $logo_color;
+}
+.pricelist_item{
+	font-size: 12px;
+#	padding-top: 10px;
+#	padding-bottom: 10px;
+	color:#000000;
+}
+
+.mainpage_title{
+	padding-bottom: 10px;
+	font-weight:bold;
+	font-size: 21px;
+	color: $logo_color;
+	
+	line-height: 40px;
+	text-decoration:none;
+}
+
+/* options for positioning images in the section text */
+
+.imagerightbase{
+	float:right;
+	margin-left:20px;
+	margin-bottom:20px;
+}
+
+.imageleftbase{
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+
+}
+
+.imageright{
+	@extend .imagerightbase;	
+	max-width: 50%;
+}
+
+.imagerightlarge{
+	@extend .imagerightbase;	
+	max-width: 60%;
+}
+
+.imagerightmedium{
+	@extend .imagerightbase;	
+	max-width: 40%;
+}
+
+.imagerightmediuminline{
+	@extend .imagerightmedium;
+	margin-top: 20px;
+}
+
+.imagerightsmall{
+	@extend .imagerightbase;	
+	max-width: 30%;
+}
+
+.imagerightxsmall{
+	@extend .imagerightbase;	
+	max-width: 10%;
+}
+
+.imageleftlarge{
+	@extend .imageleftbase;	
+	max-width: 60%;
+
+}
+
+.imageleftmedium{
+	@extend .imageleftbase;	
+	max-width: 40%;
+}
+
+.imageleftsmall{
+	@extend .imageleftbase;	
+	max-width: 30%;
+}
+
+.imageleftxsmall{
+	@extend .imageleftbase;	
+	max-width: 10%;
+}
+
+
+/* this is background for the content videos*/
+
+.slidearea{
+	background-color: $video_area;
+	padding-left:30px;
+	padding-right:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.webpagearea-home{
+	background-color: $homepage_background_color;
+	opacity: 0.4;
+	padding-left:30px;
+	padding-right:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+/* styles for quiz area */
+
+.question_num {
+	color: #FF1F00;
+	font-size: 70px;
+}
+
+.question_txt {
+	color: #fff;
+
+}
+
+
+
+/* text styles for accent colors in the sections */
+	
+.accent1 {
+	font-size: 21px;
+	color: $logo_color;
+}
+
+.accent2 {
+	font-size: 21px;
+	color: $logo_color;
+}
+
+.accent3 {
+	font-size: 21px;
+	color: $logo_color;
+}
+
+.txtcenter {
+	text-align: center;
+}
+
+.paragraphaccent {
+	color: $machines_color;
+#	color: #70CBF3;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* colors for text in the section header to align with the catagory colors */
+.engineering_process{
+	color:$engineering_process_color;
+}
+
+.materials{
+	color:$materials_color;
+}
+
+.structures{
+	color:$structures_color;
+}
+
+.machines{
+	color:$machines_color;
+}
+
+.energy{
+	color:$energy_color;
+}
+
+.computing{
+	color:$computing_color;
+}
+
+.logocolor{
+	color:$logo_color;
+}
+
+.inlineaccentengrprocess {
+	font-size: 14px;
+	color: $engineering_process_color;
+}
+.inlineaccentmaterials {
+	font-size: 14px;
+	color: $materials_color;
+}
+.inlineaccentstructures {
+	font-size: 14px;
+	color: $structures_color;
+}
+.inlineaccentmachines {
+	font-size: 14px;
+	color: $machines_color;
+}
+.inlineaccentenergy{
+	font-size: 14px;
+	color: $energy_color;
+}
+.inlineaccentcomputing {
+	font-size: 14px;
+	color: $computing_color;
+}
+
+/* colors for backgrounds to align with catagories*/
+
+.base_bkgd {
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.num_bkgd {
+	@extend .base_bkgd;
+	text-align: right;
+
+}
+
+.right_answer_bkgd {
+	@extend .base_bkgd;
+	background-color:$correct_color;
+	opacity: .5;
+	color: #fff;
+	
+
+}
+
+.wrong_answer_bkgd {
+	@extend .base_bkgd;
+	background-color:$logo_color;
+	opacity: .5;
+	color: #fff;
+	
+
+}
+
+.num_bkgd {
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+	text-align: right;
+
+}
+
+
+.engineering_process_bkgd{
+	@extend .base_bkgd;
+	background-color:$engineering_process_color;
+	opacity: .7;
+
+}
+
+.materials_bkgd{
+	@extend .base_bkgd;
+	background-color:$materials_color;
+	opacity: .7;
+}
+
+.structures_bkgd{
+	@extend .base_bkgd;
+	background-color:$structures_color;
+	opacity: .7;
+}
+
+.machines_bkgd{
+	@extend .base_bkgd;
+	background-color:$machines_color;
+	opacity: .8;
+}
+
+.energy_bkgd{
+	@extend .base_bkgd;
+	background-color:$energy_color;
+	opacity: .7;
+}
+
+.computing_bkgd{
+	@extend .base_bkgd;
+	background-color:$computing_color;
+	opacity: .8;
+}
+
+/*  this is formatting for the main ideas area*?
+/* you have to override the link defaults and make the main ideas bookmarks whites*/
+
+
+.mainideasheader {
+	font-weight: bold;
+	font-size: 15px;
+	color: #fff;
+}
+
+.mainideasbase {
+	color:#fff;
+	font-size: 14px;
+	line-height: 18px;
+	text-decoration:none;
+}
+
+a.mainideas:link {
+	@extend .mainideasbase;
+	
+}
+
+a.mainideas:visited {
+	@extend .mainideasbase;
+}
+
+a.mainideas:hover {
+	@extend .mainideasbase;
+}
+a.mainideas:active {
+	@extend .mainideasbase;
+}
+
+/* this is the formatting for the cat and topic names that apper below the headers*/
+/*because the catagories are links if you are on the topic page, we need all the link formatting */
+
+.catagoryandtopic {
+	color:#fff;
+	font-size: 22px;
+	line-height: 40px;
+	text-decoration:none;
+}
+
+a.catagoryandtopic:link {
+	@extend .catagoryandtopic;
+}
+
+a.catagoryandtopic:visited {
+	@extend .catagoryandtopic;
+}
+
+a.catagoryandtopic:hover {
+	@extend .catagoryandtopic;
+}
+
+a.catagoryandtopic:active {
+	@extend .catagoryandtopic;
+}
+
+
+
+
+
+
+/* colors for backgrounds to align with catagories on the text behind the cat and nav text below header*/
+
+.mainbkgd{
+	padding-left:30px;
+	padding-right:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.engineering_process_mainbkgd{
+	@extend .mainbkgd;
+	background-color:$engineering_process_color;
+}
+
+.materials_mainbkgd{
+	@extend .mainbkgd;
+	background-color:$materials_color;
+}
+
+.structures_mainbkgd{
+	@extend .mainbkgd;
+	background-color:$structures_color;
+}
+
+.machines_mainbkgd{
+	@extend .mainbkgd;
+	background-color:$machines_color;
+}
+
+.energy_mainbkgd{
+	@extend .mainbkgd;
+	background-color:$energy_color;
+}
+
+.computing_mainbkgd{
+	@extend .mainbkgd;
+	background-color:$computing_color;
+}
+
+.logo_mainbkgd{
+	background-color: $logo_color;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-bottom:10px;
+}
+
+/* these two classes are here to keep the bookmarked section headers from having the underscoring*/
+a:link {
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+
+
+/* This section allows for the video size to be responsive */
+/* Copyright (c) 2011 ZURB, http://www.zurb.com/ */	
+.flex-video {
+	position: relative;
+	padding-top: 25px;
+	padding-bottom: 67.5%;
+	height: 0;
+	margin-bottom: 16px;
+	overflow: hidden;
+
+}
+
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.flex-video-small embed {
+	
+	float: right;
+	width: 40%;
+	height: 100%;
+}
+
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+	  .flex-video { padding-top: 0; }
+	}
+	
+
+/* This section allows you to change the spacing on the header nav graphics so you aren't stuck with 20 px */
+.row .span2NoGutter { width:16%; margin-left:.66667%} // 100% / 6 col
+.row .span3NoGutter { width:24.5%; margin-left:.59%} // 100% / 4 col
+.row .span6NoGutter { width:49.9%; margin-left:-.4%} // 100% / 2 col
+
+#menu {
+    list-style:none;
+    padding-left:0;
+	margin-left: 0;
+	z-index:10;
+}
+
