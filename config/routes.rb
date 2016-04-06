@@ -3,11 +3,17 @@ Consulting::Application.routes.draw do
   get "static_pages/home"
   get "static_pages/about"
   get "static_pages/projects"
+  get "static_pages/mgmtcons"
+  get "static_pages/smallbiz"
+  get "static_pages/enged"
   root 'static_pages#home'
   
   match '/about', to: 'static_pages#about', via: 'get'
  match '/home', to: 'static_pages#home', via: 'get'
  match '/projects', to: 'static_pages#projects', via: 'get'
+ match '/mgmtcons', to: 'static_pages#mgmtcons', via: 'get'
+ match '/smallbiz', to: 'static_pages#smallbiz', via: 'get'
+ match '/enged', to: 'static_pages#enged', via: 'get'
    
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
