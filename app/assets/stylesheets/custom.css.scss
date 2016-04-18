@@ -18,6 +18,22 @@ $computing_color: #F74D9C;
 $video_area: #ffffff;
 $correct_color: #008000;
 
+.carousel_header{
+#	font-size: 14px;
+	font-weight:bold;
+	font-size: 36px;
+	color: $logo_color;
+}
+
+.carousel_divider{
+	@extend .featurette_divider;	
+	border-color: $logo_color;
+}
+
+.carousel-caption2025{
+	@extend .carousel-caption;	
+	border-color: $logo_color;
+}
 
 .banner-top-2025{
 	color:#fff;

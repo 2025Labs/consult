@@ -1,8 +1,8 @@
-set :domain, "production.2025consulting.com"  # 
+set :domain, "www.2025consulting.com"  # 
 
-role :app, "52.24.160.45"
-role :web, "52.24.160.45"
-role :worker, "52.24.160.45"
+role :app, "52.35.43.116"
+role :web, "52.35.43.116"
+role :worker, "52.35.43.116"
 
-server "52.24.160.45", :db, :primary=>true
+server "52.35.43.116", :db, :primary=>true
 

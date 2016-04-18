@@ -46,3 +46,15 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+#from 2025 kids Gemfile
+group :development, :test do
+  #gem 'sqlite3', '1.3.5'
+  gem 'pg'
+  gem 'rspec-rails', '2.11.0'
+#  gem 'capistrano'
+#  gem 'capistrano-rails'
+#  gem 'capistrano-ext'
+  gem 'capistrano', '2.15.5'
+  gem 'capistrano-ext', '1.2.1'
+end
