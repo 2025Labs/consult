@@ -59,3 +59,25 @@ group :development, :test do
   gem 'capistrano', '2.15.5'
   gem 'capistrano-ext', '1.2.1'
 end
+
+#from 2025 labs setup
+#group :development, :test do
+  #gem 'sqlite3', '1.3.5'
+#  gem 'pg'
+#  gem 'rspec-rails', '2.11.0'
+#  gem 'capistrano'
+#  gem 'capistrano-ext'
+#end
+
+group :test do
+  gem 'capybara', '1.1.2'
+end
+
+group :production, :staging do
+  gem 'pg'
+#following is for Heroku deployment  
+  gem 'rails_12factor'
+end
+
+#end from 2025 Labs setup
+
