@@ -2,6 +2,7 @@ Consulting::Application.routes.draw do
   
   get "static_pages/home"
   get "static_pages/about"
+  get "static_pages/contact"
   get "static_pages/projects"
   get "static_pages/mgmtcons"
   get "static_pages/smallbiz"
@@ -10,6 +11,7 @@ Consulting::Application.routes.draw do
   root 'static_pages#home'
   
   match '/about', to: 'static_pages#about', via: 'get'
+  match '/contact', to: 'static_pages#contact', via: 'get'
  match '/home', to: 'static_pages#home', via: 'get'
  match '/projects', to: 'static_pages#projects', via: 'get'
  match '/mgmtcons', to: 'static_pages#mgmtcons', via: 'get'
