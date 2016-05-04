@@ -1,0 +1,59 @@
+
+
+	<div class="row-fluid", style= "padding-top:10px; ">			
+			<div class="logo_mainbkgd">
+				<span class="banner-top-2025" > Welcome to 2025 Consulting</span>
+			</div> <!-- background -->
+	</div>	
+
+<!-- below was originally nav class -->
+<div class="navbar navbar-2025">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <%= link_to image_tag("Consulting_logo1.png" , :class=>'navbar-brand'), root_path  %>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+		
+		<li class="<%= 'active' if current_page?(mgmtcons_path) %>"><%= link_to "Management Consulting", mgmtcons_path  %> </li>
+		<li class="<%= 'active' if current_page?(pm_path) %>"><%= link_to "Program Management", pm_path  %> </li>
+		<li class="<%= 'active' if current_page?(smallbiz_path) %>"><%= link_to "Small Business", smallbiz_path  %> </li>
+		
+		<li class="<%= 'active' if current_page?(projects_path) %>"><%= link_to "Projects", projects_path %> </li>
+		
+      </ul>
+      <!-- render search partial here if desired on menu -->
+	  <!-- %= render 'layouts/search' %> -->
+
+<div class="dropdown pull-right">
+   
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+    About
+    <span class="caret"></span>
+  </button>
+ 
+  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+		   <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About", about_path %> </li>
+		  <li class="<%= 'active' if current_page?(enged_path) %>"><%= link_to "Community Work", enged_path %> </li>	
+		      <li role="separator" class="divider"></li>
+		  <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path %> </li>
+  </ul>
+</div>
+
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</div> <!-- was nav -->
+
+
+
+	

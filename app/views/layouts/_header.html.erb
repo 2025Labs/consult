@@ -6,51 +6,49 @@
 			</div> <!-- background -->
 	</div>	
 
-<nav class="navbar navbar-2025">
-  <div class="container-fluid">
+<!-- below was originally nav class -->
+<div class="navbar navbar-2025">
+  <div class="container-fluid"> <!-- was container-fluid -->
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-	  <%= link_to image_tag("Consulting_logo1.png" , :class=>'navbar-brand'), root_path  %>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-		
-		
-		<li class="<%= 'active' if current_page?(mgmtcons_path) %>"><%= link_to "Management Consulting", mgmtcons_path  %> </li>
-		<li class="<%= 'active' if current_page?(pm_path) %>"><%= link_to "Program Management", pm_path  %> </li>
-		<li class="<%= 'active' if current_page?(smallbiz_path) %>"><%= link_to "Small Business", smallbiz_path  %> </li>
-       
-	  
-    
-		
-		<li class="<%= 'active' if current_page?(projects_path) %>"><%= link_to "Projects", projects_path %> </li>
-	 
-		
-		
-      </ul>
-      <!-- render search partial here if desired on menu -->
-	  <!-- %= render 'layouts/search' %> -->
-	
+    <div class="navbar-header">	
+	<%= link_to image_tag("Consulting_logo1.png" , :class=>'navbar-brand'), root_path  %>
 	   
-      <ul class="nav navbar-nav navbar-right">
-		   <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About", about_path %> </li>
-		  <li class="<%= 'active' if current_page?(enged_path) %>"><%= link_to "Community Work", enged_path %> </li>	
-		  <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path %> </li>	
-        
+		 <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+         	<span class="icon-bar"></span>
+        	 <span class="icon-bar"></span>
+        	 <span class="icon-bar"></span>
+		 </button>
+	</div>	 
+		<div class="collapse navbar-collapse navHeaderCollapse"> 
 		
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+		<ul class="nav navbar-nav navbar-right">
+			<li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path  %> </li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b> </a>
+			<ul class="dropdown-menu">
+			<li class="<%= 'active' if current_page?(mgmtcons_path) %>"><%= link_to "Management Consulting", mgmtcons_path  %> </li>
+			<li class="<%= 'active' if current_page?(pm_path) %>"><%= link_to "Program Management", pm_path  %> </li>
+			<li class="<%= 'active' if current_page?(smallbiz_path) %>"><%= link_to "Small Business", smallbiz_path  %> </li>
+			</ul>
+			<li class="<%= 'active' if current_page?(projects_path) %>"><%= link_to "Projects", projects_path %> </li>
+		
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b> </a>
+				<ul class="dropdown-menu">
+		    		   <li><%= link_to "About Us", about_path %> </li>
+		    		  <li><%= link_to "Community Work", enged_path %> </li>	
+		    		   <li role="separator" class="divider"></li>
+		    		  <li><%= link_to "Contact", contact_path %> </li>
+				</ul> <!-- dropdown menu -->
+			</li> <!-- dropdown -->
+  		
+		</ul> <!-- nav navbar-nav navbar-right -->
+		
+		</div> <!-- navbar-collapse -->	  
+    </div> <!-- navbar-header -->
 
+  </div><!-- /.container-fluid -->
+</div> <!-- was nav -->
 
 
 	

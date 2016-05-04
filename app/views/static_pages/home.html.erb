@@ -1,9 +1,12 @@
 
   
 
-		
-<%= render 'layouts/carousel' %>
-
+<span class="visible-md">		
+	 <%= render 'layouts/carousel' %>
+</span>
+<span class="visible-lg">		
+	 <%= render 'layouts/carousel' %>
+</span>
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
@@ -13,7 +16,7 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-sm-4">
           
 		  <%= link_to image_tag("consulting1.png" , :class=>'img-circle'),   mgmtcons_path %>
 		
@@ -22,14 +25,14 @@
           <p><a class="btn btn-default" href="mgmtcons" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         
-		<div class="col-lg-4">
+		<div class="col-sm-4">
         	<%= link_to image_tag("consulting2.png" , :class=>'img-circle'),   smallbiz_path %>  
 		 	<a href="smallbiz"><h2>Small Business</h2></a>
           	<p>Consulting to small businesses and startups, both for-profit and non-profit. We help companies get off the ground, land revenue, build the business, and implement solutions. Our capabilities span the gamut of business operations, including product definition, technology implementation, operations, finance, and IT. We can also help a young company convey a professionalism that belies their size, developing critical presentations, templates, visuals, web presence, and other branding. Our founder has 12+ years of experience with small business management.</p>
           <p><a class="btn btn-default" href="smallbiz" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       
-	    <div class="col-lg-4">
+	    <div class="col-sm-4">
 			<%= link_to image_tag("consulting3.png" , :class=>'img-circle'),   pm_path %>
 			<a href="pm"><h2>Program Management</h2></a>
           	<p>We specialize in larger-scale programs, executive-led programs, implementation of new programs, and turnaround situations for programs in trouble. We can also lead smaller scale programs and iterative improvements, and can institute a formal program management office. We lead both technical and non-technical projects equally effectively. </p>

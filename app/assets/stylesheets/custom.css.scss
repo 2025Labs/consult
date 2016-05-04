@@ -90,6 +90,7 @@ $menu_text: 000000;
 	padding-top:7px;
 	padding-bottom:7px;
 }
+/* static or fixed navbar-static-top vs navbar-fixed-top was extend navbar-default*/
 .navbar-2025{
 	@extend .navbar-default;	
 #	background-color: $logo_color;
