@@ -105,11 +105,14 @@ $menu_text: 000000;
 	@extend .navbar-header;	
 	background-color: $logo_color;
 }
-.footer{
+#footer{
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-
+.footer-logo {
+	padding-bottom: 20px;
+	padding-right: 100px;
+}
 .footheader {
 	font-size:15px;	
 	font-family: Impact, charcoal, sans-serif;
