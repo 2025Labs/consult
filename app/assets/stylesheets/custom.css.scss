@@ -61,6 +61,11 @@ $correct_color: #008000;
 	padding-top:10px;
 	margin-bottom:10px;
 }
+#footer {
+	background-color: #f1f1f1;
+	padding-top: 10px;
+
+}
 $homepage_background_color: $engineering_process_color;
 .menu_nav{
 	text-decoration:none;
@@ -103,6 +108,15 @@ $menu_text: 000000;
 .footer{
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+.footheader {
+	font-size:15px;	
+	font-family: Impact, charcoal, sans-serif;
+	padding-left: 0px;
+	padding-right: 60px;
+	margin-top: 40px;
+	text-align: left;
 }
 
 .bottomsquares{
@@ -594,7 +608,7 @@ a.catagoryandtopic:active {
 
 .logo_mainbkgd{
 	background-color: $logo_color;
-	padding-left:10px;
+	padding-left:80px;
 	padding-right:10px;
 	padding-bottom:10px;
 	padding-top:10px;

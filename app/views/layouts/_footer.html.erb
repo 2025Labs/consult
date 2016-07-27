@@ -1,24 +1,50 @@
       <!-- FOOTER -->
-<footer>
+<div class="container-fluid">
+<div id="footer">
+	<div class="container">
+		<div class="row featurette">
+			<div class="col-sm-2" style="text-align:left">
+				<span class="visible-sm visible-md visible-lg">
+				 <%= link_to image_tag("2025_logo.png", :class=>'imageleftlarge', :class=> 'featurette-image img-responsive center-block'), home_path %>
+				</span>
+				 <br>
 
-	
-	<div class="row">
-		<div class="col-md-1">
-			<%= link_to image_tag("2025_logo.png", :class=>'imageleftlarge'), home_path %>
-		</div>
+			</div> <!--col-sm-3-->
 
-		<div class="col-md-8">
-			<p><p>&copy; 2016, 2025 Labs, Inc. All rights reserved. &middot; <a href="privacy">Privacy</a> &middot; <a href="terms">Terms</a>
+			<div class="col-sm-2" style="text-align:left">
+				<a class="footheader" <%= link_to "Home",    root_path %></a><br>
+			</div>
+
+			<div class="col-sm-2" style="text-align:left">
+				<a class="footheader">Services</a><br>
+				<a class="footsub" <%= link_to "Management Consulting", mgmtcons_path  %> </a><br>
+				<a class="footsub" <%= link_to "Program Management", pm_path  %> </a><br>
+				<a class="footsub" <%= link_to "Small Business", smallbiz_path  %></a><br>
+			</div>	<!--col-sm-3-->
+
+			<div class="col-sm-2" style="text-align:left">
+				<a class="footheader" <%= link_to "Projects", projects_path %> </a><br>
+			</div>
+
+			<div class="col-sm-2" style="text-align:left">
+				<a class="footheader">About</a><br>
+				<a class="footsub" <%= link_to "About Us", about_path %> </a><br>
+				<a class="footsub" <%= link_to "Community Work", enged_path %></a><br>
+				<a class="footsub" <%= link_to "Contact", contact_path %></a><br>
+			</div>	<!--col-sm-3-->
 		</div>
-		<div class="col-md-3">
-	        <p class="pull-right"><a href="#">Back to top</a>   
+		<br>
+		<div class="row">
+
+			<div class="col-md-8">
+			<p><p><p class="pull-right">&copy; 2016, 2025 Labs, Inc. All rights reserved. &middot; <a href="privacy">Privacy</a> &middot; <a href="terms">Terms</a>
+			</div>
+			   			
+			<!-- <div class="col-md-8> -->
+			<!-- <span class="banner-bottom-2025"><p class="pull-right">The Services Company with a Social Mission</span> -->
+				<!-- </div> background -->
+		
 		</div>
 	</div>
-	
-	<div class="row">        			
-		<div class="logo_footer">
-			<span class="banner-bottom-2025"><p class="pull-right">The Services Company with a Social Mission</span>
-		</div> <!-- background -->
-	</div>
-
-</footer>
+</div>
+</div>
