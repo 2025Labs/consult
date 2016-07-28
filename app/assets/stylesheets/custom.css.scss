@@ -29,7 +29,7 @@ $correct_color: #008000;
 }
 
 .carousel_divider{
-	@extend .featurette_divider;	
+/*	@extend .featurette_divider;	*/
 	border-color: $logo_color;
 }
 
